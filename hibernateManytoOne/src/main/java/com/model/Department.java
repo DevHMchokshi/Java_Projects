@@ -1,0 +1,20 @@
+package com.model;
+
+public class Department {
+	private int deptId;
+	private String deptName;
+	public int getDeptId() {
+		return deptId;
+	}
+	public String getDeptName() {
+		return deptName;
+	}
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
+	public void setDeptId(int deptId) {
+		this.deptId = deptId;
+	}
+	
+
+}

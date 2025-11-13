@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+<bean id="person" class="com.person.Person">
+<property name="person_id" value="1"></property>
+<property name="person_name" value="Dev"></property>
+<property name="mobile" value="98247"></property>
+</bean>       
+
+<bean id="phone" class="com.phone.Phone">
+<property name="phoneModelno" value="16"></property>
+<property name="phoneName" value="iphone"></property>
+<property name="phoneStorage" value="256 "></property>
+<property name="person" ref="person"></property>
+</bean>
+
+<bean id="Employee" class="com.employee.Employee">
+<constructor-arg index="0" value="101"></constructor-arg>
+<constructor-arg index="1" value="Dev"></constructor-arg>
+</bean>
+
+<bean id="Department" class="com.department.Department">
+<constructor-arg index="0" value="10"></constructor-arg>
+<constructor-arg index="1" value="IT"></constructor-arg>
+<constructor-arg index="2" ref="Employee"></constructor-arg>
+</bean>
+
+</beans>    
