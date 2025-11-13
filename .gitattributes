@@ -1,3 +1,7 @@
 *.pdf filter=lfs diff=lfs merge=lfs -text
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
+Banking_app/src/main/webapp/Downloads/biology-student-book-1_compress[[:space:]](1).pdf filter=lfs diff=lfs merge=lfs -text
+Banking_app/src/main/webapp/Downloads/Chemistry[[:space:]]Student[[:space:]]Book[[:space:]]1.pdf filter=lfs diff=lfs merge=lfs -text
+Banking_app/src/main/webapp/Downloads/eclipse-inst-jre-win64.exe filter=lfs diff=lfs merge=lfs -text
+Banking_app.zip filter=lfs diff=lfs merge=lfs -text
