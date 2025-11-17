@@ -28,4 +28,40 @@
 <constructor-arg index="2" ref="Employee"></constructor-arg>
 </bean>
 
-</beans>    
+<bean id="Courses" class="com.courses.Courses">
+<property name="courseId" value="1"></property>
+<property name="courseName" value="Java"></property>
+</bean>   
+
+<bean id="Courses1" class="com.courses.Courses">
+<property name="courseId" value="2"></property>
+<property name="courseName" value="php"></property>
+</bean>
+
+
+<bean id="Student" class="com.student.Student">
+<property name="stuid" value="1"></property> 
+<property name="stuName" value="Dev"></property>
+</bean>
+
+
+<bean id="generics" class="com.generics.Arraylist">
+<property name="list">
+<list>
+
+<ref bean="Courses"></ref>
+<ref bean="Courses1"></ref>
+<ref bean="Student"></ref>
+<ref bean="generics"/>
+</list>
+</property>
+
+
+</bean>
+</beans>
+
+
+
+
+
+
