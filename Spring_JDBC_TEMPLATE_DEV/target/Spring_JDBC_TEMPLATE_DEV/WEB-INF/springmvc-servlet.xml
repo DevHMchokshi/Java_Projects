@@ -9,7 +9,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
  
  <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/test" />
+        <property name="url" value="jdbc:mysql://localhost:3306/developer" />
         <property name="username" value="root" />
         <property name="password" value="" />
 </bean>
@@ -21,7 +21,7 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
  <context:component-scan base-package="com.spring.jdbctemplate" />
  <context:annotation-config/>
      <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-         <property name="prefix" value="/WEB-INF/View" />
+         <property name="prefix" value="/WEB-INF/View/" />
          <property name="suffix" value=".jsp" />
      </bean>
   <bean id="userService" class="com.spring.jdbctemplate.UserServiceImpl" />

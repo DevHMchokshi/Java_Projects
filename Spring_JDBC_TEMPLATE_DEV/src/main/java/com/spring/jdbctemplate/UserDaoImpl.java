@@ -1,5 +1,7 @@
 package com.spring.jdbctemplate;
 
+import java.util.List;
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +22,31 @@ public class UserDaoImpl implements UserDao{
 	jdbcTemplate.update(sql, new Object[] 
 			{ user.getUsername(), user.getPassword()
 			});
-		
 	}
+	
 
-}
+
+
+   @Override
+   public User getUserById(int id) {
+	  // TODO Auto-generated method stub
+	   String sql="select * from user where id="+id;
+	   return jdbcTemplate.queryForObject(sql, (rs,rowNum)->
+	   {
+		   User user=new User();
+		   user.setId(rs.getInt("id"));
+		   user.setUsername(rs.getString("username"));
+		   user.setPassword(rs.getString("password"));
+		   return user;
+	   });
+	   
+   }	   
+   
+
+  
+   @Override
+   public List<User> getAllUsers() {
+	// TODO Auto-generated method stub
+	return null;
+   }
+   }
