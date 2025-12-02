@@ -1,12 +1,13 @@
-package com.example.SpringBootDev;
+package com.example.SpringBootEmail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootDevApplication {
+public class SpringBootEmailApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootDevApplication.class, args);
+		SpringApplication.run(SpringBootEmailApplication.class, args);
 	}
+
 }

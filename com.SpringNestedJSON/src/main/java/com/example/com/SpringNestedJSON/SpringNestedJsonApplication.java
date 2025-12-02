@@ -1,12 +1,13 @@
-package com.example.SpringBootDev;
+package com.example.com.SpringNestedJSON;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootDevApplication {
+public class SpringNestedJsonApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootDevApplication.class, args);
+		SpringApplication.run(SpringNestedJsonApplication.class, args);
 	}
+
 }
