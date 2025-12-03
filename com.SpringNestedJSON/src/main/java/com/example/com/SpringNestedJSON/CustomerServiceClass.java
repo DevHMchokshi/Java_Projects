@@ -10,10 +10,14 @@ public class CustomerServiceClass {
 private CustomerRepository customerRepository;
 
 
-public CustomerEntity saveCustomer(CustomerEntity entity) {
+    public CustomerEntity saveCustomer(CustomerEntity entity) {
 	entity.getOrderEntity().forEach(order -> order.setCustomerEntity(entity));
 	return customerRepository.save(entity);
-	
-
-}
+        
+    }
+    
+    // fetch all customers with orders
+    public Iterable<CustomerEntity>fetchAllCustomers(){
+		return customerRepository.findAll();
+    }
 }
